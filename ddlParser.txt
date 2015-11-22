@@ -1,0 +1,12 @@
+ddl Parsers
+
+
+cat RFE.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar
+
+Once you see that it works, redirect the output into a file as follows:
+
+ cat RFE.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser.jar > RFE.ddl2
+
+Do the same with parser2
+
+ cat RFE.ddl | sed -e "s/;/;~/" -e 's/"//g' | tr -s "\n~" " \n" | grep "ALTER TABLE.*KEY" | tr -d '\15\32' | java -jar DDLParser2.jar > RFE.ddl3
