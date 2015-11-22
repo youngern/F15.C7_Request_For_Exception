@@ -1,0 +1,258 @@
+drop view RFE_Emp_view;
+drop view RFE_sysadmin_view;
+drop view RFE_lab_director_view;
+drop view RFE_exec_director_view;
+drop view RFE_chairperson_view;
+
+create view RFE_Emp_view as
+SELECT
+    employee_id,
+    employee_name,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chair_person_flag,
+    F15C7Auth_auth_id,
+    F15C7Labs_lab_id
+FROM F15C7Emp;
+
+create or replace TRIGGER RFE_emp_trigger
+     INSTEAD OF insert ON RFE_Emp_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C7Emp(
+        employee_id,
+        employee_name,
+        employee_email,
+        employee_office,
+        employee_phone,
+        employee_status,
+        system_admin_flag,
+        lab_director_flag,
+        exec_director_flag,
+        chair_person_flag,
+        F15C7Auth_auth_id,
+        F15C7Labs_lab_id)
+         VALUES (
+        :NEW.employee_id,
+    :NEW.employee_name,
+    :NEW.employee_email,
+    :NEW.employee_office,
+    :NEW.employee_phone,
+    :NEW.employee_status,
+    0,
+    0,
+    0,
+    0,
+    :NEW.F15C7Auth_auth_id,
+    :NEW.F15C7Labs_lab_id
+    ) ;
+END;
+/
+
+create view RFE_sysadmin_view as
+SELECT
+    employee_id,
+    employee_name,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chair_person_flag,
+    F15C7Auth_auth_id,
+    F15C7Labs_lab_id
+FROM F15C7Emp where system_admin_flag = 1 ;
+
+create or replace TRIGGER RFE_sysadmin_trigger
+     INSTEAD OF insert ON RFE_sysadmin_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C7Emp(
+        employee_id,
+        employee_name,
+        employee_email,
+        employee_office,
+        employee_phone,
+        employee_status,
+        system_admin_flag,
+        lab_director_flag,
+        exec_director_flag,
+        chair_person_flag,
+        F15C7Auth_auth_id,
+        F15C7Labs_lab_id
+        )
+         VALUES (
+        :NEW.employee_id,
+    :NEW.employee_name,
+    :NEW.employee_email,
+    :NEW.employee_office,
+    :NEW.employee_phone,
+    :NEW.employee_status,
+    1,
+    0,
+    0,
+    0,
+    :NEW.F15C7Auth_auth_id,
+    :NEW.F15C7Labs_lab_id
+    ) ;
+END;
+/
+
+create view RFE_lab_director_view as
+SELECT
+    employee_id,
+    employee_name,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chair_person_flag,
+    F15C7Auth_auth_id,
+    F15C7Labs_lab_id
+FROM F15C7Emp where lab_director_flag = 1;
+
+create or replace TRIGGER RFE_lab_director_trigger
+     INSTEAD OF insert ON RFE_lab_director_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C7Emp(
+        employee_id,
+        employee_name,
+        employee_email,
+        employee_office,
+        employee_phone,
+        employee_status,
+        system_admin_flag,
+        lab_director_flag,
+        exec_director_flag,
+        chair_person_flag,
+        F15C7Auth_auth_id,
+        F15C7Labs_lab_id
+        )
+         VALUES (
+        :NEW.employee_id,
+    :NEW.employee_name,
+    :NEW.employee_email,
+    :NEW.employee_office,
+    :NEW.employee_phone,
+    :NEW.employee_status,
+    0,
+    1,
+    0,
+    0,
+    :NEW.F15C7Auth_auth_id,
+    :NEW.F15C7Labs_lab_id
+    ) ;
+END;
+/
+
+create view RFE_exec_director_view as
+SELECT
+    employee_id,
+    employee_name,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chair_person_flag,
+    F15C7Auth_auth_id,
+    F15C7Labs_lab_id
+FROM F15C7Emp where exec_director_flag = 1;
+
+create or replace TRIGGER RFE_exec_director_trigger
+     INSTEAD OF insert ON RFE_exec_director_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C7Emp(
+        employee_id,
+        employee_name,
+        employee_email,
+        employee_office,
+        employee_phone,
+        employee_status,
+        system_admin_flag,
+        lab_director_flag,
+        exec_director_flag,
+        chair_person_flag,
+        F15C7Auth_auth_id,
+        F15C7Labs_lab_id
+        )
+         VALUES (
+        :NEW.employee_id,
+    :NEW.employee_name,
+    :NEW.employee_email,
+    :NEW.employee_office,
+    :NEW.employee_phone,
+    :NEW.employee_status,
+    0,
+    0,
+    1,
+    0,
+    :NEW.F15C7Auth_auth_id,
+    :NEW.F15C7Labs_lab_id) ;
+END;
+/
+
+create view RFE_chairperson_view as
+SELECT
+    employee_id,
+    employee_name,
+    employee_email,
+    employee_office,
+    employee_phone,
+    employee_status,
+    system_admin_flag,
+    lab_director_flag,
+    exec_director_flag,
+    chair_person_flag,
+    F15C7Auth_auth_id,
+    F15C7Labs_lab_id
+FROM F15C7Emp where chair_person_flag = 1;
+
+create or replace TRIGGER RFE_chairperson_trigger
+     INSTEAD OF insert ON RFE_chairperson_view
+     FOR EACH ROW
+BEGIN
+    insert into F15C7Emp(
+        employee_id,
+        employee_name,
+        employee_email,
+        employee_office,
+        employee_phone,
+        employee_status,
+        system_admin_flag,
+        lab_director_flag,
+        exec_director_flag,
+        chair_person_flag,
+        F15C7Auth_auth_id,
+        F15C7Labs_lab_id
+        )
+         VALUES (
+        :NEW.employee_id,
+    :NEW.employee_name,
+    :NEW.employee_email,
+    :NEW.employee_office,
+    :NEW.employee_phone,
+    :NEW.employee_status,
+    0,
+    0,
+    0,
+    1,
+    :NEW.F15C7Auth_auth_id,
+    :NEW.F15C7Labs_lab_id
+    ) ;
+END;
+/
