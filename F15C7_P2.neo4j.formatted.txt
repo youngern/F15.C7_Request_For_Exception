@@ -43,6 +43,7 @@ Neo4j on conn "MATCH (a:movie),(b:ttr) WHERE a.LOCA5 = TRUE AND b.tid = 50 CREAT
 Neo4j on conn "MATCH (a:movie),(b:ttr) WHERE a.LOCA6 = TRUE AND b.tid = 60 CREATE (a)-[:playingat]->(b)"
 
 
+
 # Neo4j on conn "MATCH(a:movie)-[:showing]->(b:theatre)  RETURN b.dname, a.ename"
 # Neo4j on conn "MATCH(a:movie)<-[:playingat]-(b:theatre) WHERE b.tid = 20 RETURN b, a.ename, a.job, a.mgr, a.location, a.hiredate"
 
