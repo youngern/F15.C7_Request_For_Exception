@@ -27,7 +27,7 @@ prompt APPLICATION 31154 - RESTful Part 2
 -- Application Export:
 --   Application:     31154
 --   Name:            RESTful Part 2
---   Date and Time:   14:39 Tuesday November 24, 2015
+--   Date and Time:   15:01 Tuesday November 24, 2015
 --   Exported By:     ADWIGHT@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -105,7 +105,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'ADWIGHT@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20151124143605'
+,p_last_upd_yyyymmddhh24miss=>'20151124150111'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -2081,7 +2081,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ADWIGHT@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20151124143605'
+,p_last_upd_yyyymmddhh24miss=>'20151124150111'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(18182901221310177445)
@@ -2141,7 +2141,7 @@ wwv_flow_api.create_report_columns(
 ,p_column_display_sequence=>3
 ,p_column_heading=>'Title'
 ,p_use_as_row_header=>'N'
-,p_report_column_width=>20
+,p_report_column_width=>32
 ,p_derived_column=>'N'
 ,p_include_in_export=>'Y'
 );
@@ -2163,7 +2163,7 @@ wwv_flow_api.create_report_columns(
 ,p_column_display_sequence=>5
 ,p_column_heading=>'Metascore'
 ,p_use_as_row_header=>'N'
-,p_report_column_width=>20
+,p_report_column_width=>8
 ,p_derived_column=>'N'
 ,p_include_in_export=>'Y'
 );
