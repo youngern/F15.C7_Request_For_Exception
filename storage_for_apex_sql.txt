@@ -1,0 +1,13 @@
+select 
+jt1.title title,
+jt2.director director,
+jt3.metascore metascore
+from apex_collections t,
+json_table(t.clob001, '$.TITLE[*]' COLUMNS rid for ordinality, title varchar2(100) path '$') jt1,
+json_table(t.clob001, '$.DIRECTOR[*]' COLUMNS rid for ordinality, director varchar2(50) path '$') jt2,
+json_table(t.clob001, '$.METASCORE[*]' COLUMNS rid for ordinality, metascore number path '$') jt3
+where t.collection_name = 'P2_DOREST_RESULTS' and
+jt1.rid = jt2.rid and jt2.rid = jt3.rid
+order by jt3.metascore DESC
+
+
