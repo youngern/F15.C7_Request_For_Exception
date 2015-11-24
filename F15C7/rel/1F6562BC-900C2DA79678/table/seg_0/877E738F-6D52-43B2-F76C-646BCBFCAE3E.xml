@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="877E738F-6D52-43B2-F76C-646BCBFCAE3E" name="F15C7Roles">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>4555A596-6B01-2A3A-6691-7E3748CF8D6E</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="role_code" id="FAFF3E78-2D66-C4F8-1CC2-AA3D07937000">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>66654072-9367-2325-C3A2-8862DF84152E</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_type" id="9F02E268-16C6-C626-A564-005FAC13BC0B">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>DE98142A-0E91-57AC-DBF2-DA2AA95B4FCB</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="E76051E3-6DB4-B35C-BE5D-98F7DA62B401">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>4A737F60-0F50-176E-ACD3-13D98EFCB267</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="366088F0-AFE7-052A-DCA9-885DEBEB5EA5" name="F15C7Roles_PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>E33A1B36-61DD-C8DC-285C-CB257935FC41</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAFF3E78-2D66-C4F8-1CC2-AA3D07937000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

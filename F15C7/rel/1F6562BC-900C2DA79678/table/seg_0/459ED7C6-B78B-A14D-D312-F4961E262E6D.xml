@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="459ED7C6-B78B-A14D-D312-F4961E262E6D" name="F15C7TaskList">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>26352A15-6453-AA69-9AF0-9A753D2D781F</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="F15C7RFE_rfe_id" id="86349797-CC74-50C4-D371-D141EE6CD43E">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>53B5BC50-4E9D-C988-9456-CDF7AD141CC2</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70EC44F4-50C9-B825-8B61-602F77764892" referredColumn="62578415-554F-8509-6D59-036FEC0F721D"/>
+</associations>
+</Column>
+<Column name="F15C7Tasks_task_id" id="AA284403-16A0-6EE9-E830-BF81BC8DD65D">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>F9FFD5FC-2474-5EDE-DBE5-DD8A287E4C6F</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BE777C6-8C8D-0A54-6C0D-D65DACE0DCBE" referredColumn="427BE372-EDF0-E1BA-4694-F4EAA3D4B103"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3925BD0D-44D3-0F02-2B31-22FE20E53702" name="F15C7TaskList_F15C7RFE_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>3B22957A-6AC3-7B25-00DD-85BF5B4A3705</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86349797-CC74-50C4-D371-D141EE6CD43E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F72FB35-39D3-1D2E-6656-80FBA70A9E3A" name="F15C7TaskList_F15C7Tasks_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>B6025D21-3906-99A4-3DD1-41D37CD8C4FD</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA284403-16A0-6EE9-E830-BF81BC8DD65D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

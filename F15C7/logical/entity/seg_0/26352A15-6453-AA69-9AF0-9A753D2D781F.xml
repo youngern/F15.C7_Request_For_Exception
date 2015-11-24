@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26352A15-6453-AA69-9AF0-9A753D2D781F" name="F15C7TaskList">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 13:48:56 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="53B5BC50-4E9D-C988-9456-CDF7AD141CC2">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 13:51:53 UTC</createdTime>
+<generatorID>3B22957A-6AC3-7B25-00DD-85BF5B4A3705</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>2D3FE951-66E6-A95A-86D1-2E847D8AB16F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_id" id="F9FFD5FC-2474-5EDE-DBE5-DD8A287E4C6F">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 13:52:33 UTC</createdTime>
+<generatorID>B6025D21-3906-99A4-3DD1-41D37CD8C4FD</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>CE833B55-F328-7BDB-30DE-A16F768649DA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

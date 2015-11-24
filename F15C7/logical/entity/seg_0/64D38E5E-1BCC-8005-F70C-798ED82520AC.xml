@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64D38E5E-1BCC-8005-F70C-798ED82520AC" name="F15C7Status">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:10:07 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="effective_date" id="27A125E2-10CE-3A4A-C4C9-A76DE45EE963">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:10:17 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="history_id" id="0A7DDDCD-9D4F-D6AC-8101-B442A94A51A2">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:29:51 UTC</createdTime>
+<generatorID>C8868409-492F-B102-9AB2-325F87C67F90</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>4EBA6E04-7CFA-8168-D372-2F72E8F0AD61</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_code" id="74814F33-8D43-E869-36EC-755C29AB1364">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:29:59 UTC</createdTime>
+<generatorID>F0F9B15D-CFAE-9B4D-094D-F2C47DF7B864</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>5604E6E7-835B-3178-E404-755CEF5A7DC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="820EDD3A-F1C5-2323-6CF9-C177C8924D9F">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:30:12 UTC</createdTime>
+<generatorID>C08F3D81-0078-F20A-5579-984E5734470D</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>2D3FE951-66E6-A95A-86D1-2E847D8AB16F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="AA63B4A4-69A2-0C7E-6869-A7D91FF778A8">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:30:29 UTC</createdTime>
+<generatorID>46833FA8-B613-27CD-C86B-943843685F1B</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>83D64CC6-FDAC-4E14-48B1-C4B6841827CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

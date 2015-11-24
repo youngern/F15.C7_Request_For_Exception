@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC49498F-96AD-E417-FF5A-2B274AAD8084" name="F15C7Hist">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:09:36 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="history_id" id="4EBA6E04-7CFA-8168-D372-2F72E8F0AD61">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:09:45 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="6ED4BDDA-D1F4-A04D-E763-31C3EC888523">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:29:41 UTC</createdTime>
+<generatorID>E5F2F40C-A896-EC4B-6532-CBDB962F65C6</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>2D3FE951-66E6-A95A-86D1-2E847D8AB16F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E86F8E1-F1ED-BA8B-8DB8-844F8B8ABB32" name="F15C7Hist PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:09:55 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4EBA6E04-7CFA-8168-D372-2F72E8F0AD61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

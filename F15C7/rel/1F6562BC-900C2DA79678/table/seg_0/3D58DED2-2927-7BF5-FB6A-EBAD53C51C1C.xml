@@ -1,0 +1,240 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D58DED2-2927-7BF5-FB6A-EBAD53C51C1C" name="F15C7Emp">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>B56E8DBD-8431-4751-5653-1231AC054EDE</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="6D8CABA7-2165-0AD1-0947-2A6A3AB4C4B2">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>83D64CC6-FDAC-4E14-48B1-C4B6841827CA</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_name" id="B6AB3BF2-F7D3-F2A0-3A16-B47DB5455EF7">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>4C4686BF-D9C7-9158-39EF-A070CEBBB6BB</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_email" id="8C833EC4-97A2-EECD-F0A1-1FAD96D7309E">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>532BD3CD-EDB1-AD77-0AAC-82CE65C5E0D1</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_office" id="01FB9B27-65B1-2C53-BF4D-6F9AA6FB3AD6">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>49AAE860-79B7-7DF9-5A5F-8315FD4BF4B8</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_phone" id="81E1DF1D-44CC-15CE-A60B-A5F1B22CA0EF">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>BFE2EFEE-D46D-CD20-3A88-DFB7CB050D88</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_status" id="C9626F35-FC95-E858-7F46-35F602C7A36B">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>E7DA2E52-CD21-AA92-80CE-6BD301733868</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="system_admin_flag" id="A707C162-4F7E-3176-5B77-8040779030D0">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>CAC4BBA9-4052-3426-715C-062A714AB9D4</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_director_flag" id="D27C78D6-1789-8F8E-3107-4D63E4C97FF8">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>FF3C6CED-0198-71C2-EEA5-F92811FF1039</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exec_director_flag" id="D5CA1357-8EA1-320B-1F4A-0E0C06BE498B">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>6D512846-2ADF-0920-EFD6-94F8F6A3D08B</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chair_person_flag" id="AAC996E0-6C7F-B8EA-FF2F-63191A075838">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>64E03A28-CAD4-9DC6-32E0-9565D00BB9F4</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15C7Auth_auth_id" id="4445E284-80C9-F14E-0567-4EF781E4571B">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>F39BBE7B-4795-11C5-A923-B91D2B67CFBB</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15C7Labs_lab_id" id="F7A66063-330E-AA27-7BB5-87D87CBE728D">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>7DA48D5E-41F0-F875-18C5-D4C2F582D923</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D59FD1BE-A564-074E-BA1B-3A42B21DFB49" referredColumn="5D2D5888-F862-682A-2323-0E3E667089F4"/>
+</associations>
+</Column>
+<Column name="F15C7Auth_auth_id2" id="7D68B5F3-9142-08F3-27E8-B028325E20BA">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 08:49:37 UTC</createdTime>
+<generatorID>810457FB-C290-6DDB-1870-FD3C4FA98F96</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB4976EA-2201-00F6-9DC6-5645075FE09E" name="F15C7Emp_PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>C8187617-9BA6-0F37-EB94-F28CE2C6A11C</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D8CABA7-2165-0AD1-0947-2A6A3AB4C4B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45633BEE-5C5A-8450-1D01-DEF65647B68E" name="F15C7Emp__IDX">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BAB582C9-9F8A-C7E8-E11C-C2522E6A4351</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4445E284-80C9-F14E-0567-4EF781E4571B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="986908C4-5555-777C-9A0E-F92D29E0FA0A" name="F15C7Emp_F15C7Auth_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-13 08:16:50 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="AFA8A9A6-4A8D-7FCD-3E4B-66304BC8024A" name="F15C7Emp__IDX">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 08:49:37 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BAB582C9-9F8A-C7E8-E11C-C2522E6A4351</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7D68B5F3-9142-08F3-27E8-B028325E20BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AFE1472-DCEA-E21E-B83A-4FC14FAD1499" name="F15C7Emp_F15C7Labs_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>6B7FBB9E-3E8D-3EBD-A3D3-B1EFC98CC1A8</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7A66063-330E-AA27-7BB5-87D87CBE728D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF203622-F141-F31F-9574-6DC30E10384D" name="F15C7Emp_F15C7Auth_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-22 21:11:21 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="B2B0E01F-8FD2-2DDE-5E58-D5C67B23FAB1" name="F15C7Emp_F15C7Auth_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-22 21:11:21 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

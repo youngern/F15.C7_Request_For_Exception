@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA95C246-167C-2AE3-AACE-BACE59534CD1" name="F15C7Tasks">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>7E15DE99-1848-AEA6-29F7-AFD1C61381CD</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="effective_date" id="4E66122A-42E9-ED79-A2F6-5E7FC5BE1F82">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>522182A3-2B50-AE58-BDA9-26D0FDAAA85F</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbreviation" id="9B3D8769-D324-F434-7F17-09D695B806A3">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>AE44D529-4FBF-F11D-C028-710FBDFFDCBD</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_description" id="6212FA6B-77D8-50C6-1F3B-D32E1D63EE93">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>6BF31F8C-2BE8-2854-8B74-B73FF8BFF022</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15C7RFE_rfe_id" id="284485E7-52A3-9802-8D5E-BAFA1D69979D">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>97A4C2AB-9C25-FDD4-711B-8F887274BE46</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A237CF1A-8746-79F0-0971-80E0C1230353" referredColumn="62578415-554F-8509-6D59-036FEC0F721D"/>
+</associations>
+</Column>
+<Column name="task_id" id="427BE372-EDF0-E1BA-4694-F4EAA3D4B103">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>CE833B55-F328-7BDB-30DE-A16F768649DA</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="419D997A-1E38-3658-6860-FB00C08630AB" name="F15C7Tasks_PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 14:21:09 UTC</createdTime>
+<generatorID>ACE67EEE-7887-3C63-A14E-1AE749860607</generatorID>
+<ownerDesignName>F15C7</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="427BE372-EDF0-E1BA-4694-F4EAA3D4B103"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31CACC06-C50C-1E8E-9BF9-BF934A45F589" name="F15C7Tasks_F15C7RFE_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>BA9F1982-6821-16DC-002A-3C407EC80170</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="284485E7-52A3-9802-8D5E-BAFA1D69979D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

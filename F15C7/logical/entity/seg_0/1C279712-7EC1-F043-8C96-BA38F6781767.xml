@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C279712-7EC1-F043-8C96-BA38F6781767" name="F15C7Auth">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:20:29 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="auth_id" id="C9C215FE-B915-2705-842C-135BB83E8EE3">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:20:35 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="7BDCE3DE-12E4-8624-8CA2-D80AB33A0540">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-22 13:11:36 UTC</createdTime>
+<generatorID>BAB582C9-9F8A-C7E8-E11C-C2522E6A4351</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>83D64CC6-FDAC-4E14-48B1-C4B6841827CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E6F14FB-FB9F-4B6C-9268-95716D8443D2" name="F15C7Auth PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:20:44 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9C215FE-B915-2705-842C-135BB83E8EE3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

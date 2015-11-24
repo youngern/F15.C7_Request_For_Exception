@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3214724D-87B7-FF92-C1EE-2D767247F7A4" name="F15C7Contacts">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>6EF39B09-6DEC-B3E9-68F2-3BDB815E1926</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="effective_date" id="56814D71-2E5A-E8D0-38BE-04914BEC247A">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>0EAD2904-B0D4-2AD3-3F6A-38181B7F725C</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="47627C6F-125B-1139-43F9-2498524A61F3">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>132728B0-C4B3-9597-9D4F-FC01AC17F141</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15C7Emp_employee_id" id="78D0D4A4-EF76-CC18-6D02-33F486EB9CA0">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>4FA11B8C-A72C-EF90-561E-E852384D470F</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12FF82C5-7BE9-D0E0-1912-4E175A15D9AB" referredColumn="6D8CABA7-2165-0AD1-0947-2A6A3AB4C4B2"/>
+</associations>
+</Column>
+<Column name="F15C7Roles_role_code" id="8A2A3FB6-0EFE-D564-1E83-7FB9C1CE813F">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>C5BB6069-9927-7495-36D5-178114908EC7</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="905D06B6-C8E1-BC69-1A9E-D5698D460D0C" referredColumn="FAFF3E78-2D66-C4F8-1CC2-AA3D07937000"/>
+</associations>
+</Column>
+<Column name="F15C7RFE_rfe_id" id="7AD1F893-7944-18EF-8217-E4EFDEFAE747">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>A09410E7-FF64-3DCE-B799-C469A147CECC</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16C5306A-D10F-39E9-80E5-5E20138F4504" referredColumn="62578415-554F-8509-6D59-036FEC0F721D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A12452D-8BDE-3009-B146-72EDE8CF2E10" name="F15C7Contacts_F15C7Emp_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>3546CF80-F39D-E8E7-DE1A-82B6B5A8F390</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78D0D4A4-EF76-CC18-6D02-33F486EB9CA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="154294F9-7C38-3678-E811-38E64BA09D4B" name="F15C7Contacts_F15C7Roles_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>9D322996-E4D1-C950-A0AD-B530CCF1ECB8</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A2A3FB6-0EFE-D564-1E83-7FB9C1CE813F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBA249CA-446A-2B68-3252-F9FD3C87DBA2" name="F15C7Contacts_F15C7RFE_FK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:31:44 UTC</createdTime>
+<generatorID>A8495B50-19D7-17B2-EFD0-6FC6A63A4D10</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AD1F893-7944-18EF-8217-E4EFDEFAE747"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

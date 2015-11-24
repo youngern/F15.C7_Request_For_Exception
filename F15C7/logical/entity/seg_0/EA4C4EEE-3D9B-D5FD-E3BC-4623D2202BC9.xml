@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA4C4EEE-3D9B-D5FD-E3BC-4623D2202BC9" name="F15C7Comments">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:13:07 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_entry_date" id="9ED75587-644A-49D8-F434-CBFB2954F9DC">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:13:13 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="6DF9244A-88E8-9830-F429-DCC0469CC765">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:13:25 UTC</createdTime>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="72B702C6-3B0B-0252-6E6D-8E27FB3C7851">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:30:48 UTC</createdTime>
+<generatorID>C80EB895-5F64-EC19-8679-BA397DD3B594</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>83D64CC6-FDAC-4E14-48B1-C4B6841827CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="BC557973-38EE-6CB2-3E12-0E40674ED5B9">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-09 06:30:56 UTC</createdTime>
+<generatorID>B8ED93E3-4FBF-91E9-B09D-0C4490D0B138</generatorID>
+<ownerDesignName>F15C7LogicalModel</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<referedAttribute>2D3FE951-66E6-A95A-86D1-2E847D8AB16F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment_id" id="E909F59C-8E00-A3A8-03B1-8C72FCDE7C6A">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 07:25:14 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B1B3A9BC-4007-B1CA-845F-1C83CCB4B394" name="F15C7Comments PK">
+<createdBy>songye</createdBy>
+<createdTime>2015-11-24 07:25:22 UTC</createdTime>
+<ownerDesignName>F15C7</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F6562BC-D090-2B39-0819-900C2DA79678" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E909F59C-8E00-A3A8-03B1-8C72FCDE7C6A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
