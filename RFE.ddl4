@@ -18,7 +18,10 @@ SELECT
     chair_person_flag,
     F15C7Auth_auth_id,
     F15C7Labs_lab_id
-FROM F15C7Emp;
+FROM F15C7Emp where lab_director_flag = 0
+                and system_admin_flag = 0
+                and exec_director_flag = 0
+                and chair_person_flag = 0; 
 
 create or replace TRIGGER RFE_emp_trigger
      INSTEAD OF insert ON RFE_Emp_view
@@ -50,7 +53,7 @@ BEGIN
     0,
     :NEW.F15C7Auth_auth_id,
     :NEW.F15C7Labs_lab_id
-    ) ;
+    );
 END;
 /
 
